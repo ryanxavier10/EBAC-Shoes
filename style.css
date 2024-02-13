@@ -1,0 +1,146 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-color: #ededed;
+}
+
+header{
+    background-color: rgb(31, 139, 255);
+    color: #fff;
+    padding: 16px 0px;
+}
+
+header h1{
+    font-style: italic;
+}
+
+header nav li{
+    display: inline;
+    margin-left: 16px;
+    font-size: 18px;
+}
+
+header nav li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.container{
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header .container,
+section .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+section .container{
+    align-items: flex-start;
+}
+
+section{
+    padding: 24px 0px;
+}
+
+section h2{
+    color: rgb(31, 139, 255);
+    margin: 16px 0px;
+    font-style: italic;
+    padding: 16px 0px;
+    border-bottom: 2px solid rgb(31, 139, 255);
+}
+
+section img{
+    height: 300px;
+    width: 300px;
+    margin: 32px;
+}
+
+.container-flex{
+    display: flex;
+}
+
+section{
+    padding: 48px 0px;
+}
+
+.produtos h2{
+    margin-bottom: 16px;
+    font-style: italic;
+    margin: 0px 62px;
+}
+
+.container-flex {
+    list-style: none;
+    margin: 0px 32px;
+    text-align: center;
+}
+
+
+.container-flex button{
+    margin: 0px 32px;
+}
+
+.container-flex h1{
+    margin: 16px 32px;
+}
+
+.container-flex p{
+    margin: 16px 32px;
+}
+
+.lista-tenis{
+    flex-wrap: wrap;
+}
+
+.lista-tenis li{
+    max-width: 30%;
+    margin-bottom: 24px;
+}
+
+button{
+    padding: 8px 24px;
+    background-color: rgb(31, 139, 255);
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    font-style: italic;
+    border-radius: 2px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+@media screen and (max-width:640px){
+    section .container{
+        display: block;
+    }
+    section .sobre{
+        margin: 0px 16px;
+    }
+    .container-flex{
+        display: block;
+    }
+}
+
+@media screen and (min-width:641px) and (max-width: 1023px){
+    section .container{
+        display: block;
+    }
+    section .sobre{
+        margin: 0px 16px;
+    }
+    .produtos .container-flex{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+}
